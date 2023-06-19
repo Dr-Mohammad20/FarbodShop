@@ -114,21 +114,21 @@ function index({ productsData }) {
       </div> */}
 
       {/* Header Section start*/}
-      <div className="h-[13dvh] w-full flex flex-row-reverse justify-center items-center gap-4 text-xl xl:text-3xl bg-black/[0.7] BorderDownMotefareghe">
+      <div className="h-[13dvh] w-full flex flex-row-reverse justify-center items-center gap-4 bg-black/[0.7] BorderDownMotefareghe">
         <Link
           href="/Products"
-          className="h-full w-1/4 flex justify-center items-center text-Motefareghe font-IranianSans">
+          className="h-full w-1/4 flex justify-center items-center text-Motefareghe font-IranianSans text-sm xl:text-3xl">
           محصولات
         </Link>
         <Link
           href="/"
-          className="h-full w-1/2 flex justify-center items-center text-Motefareghe font-IranianSans text-[60px]">
+          className="h-full w-1/2 flex justify-center items-center text-Motefareghe font-IranianSans text-2xl xl:text-6xl">
           فروشگاه فربد
         </Link>
         <Link
-          href="/AboutUs"
-          className="h-full w-1/4 flex justify-center items-center text-Motefareghe font-IranianSans">
-          درباره ما
+          href="/CompareItem"
+          className="h-full w-1/4 flex justify-center items-center text-Motefareghe font-IranianSans text-sm xl:text-3xl">
+          مقایسه محصولات
         </Link>
       </div>
       {/* Header Section end*/}

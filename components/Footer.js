@@ -4,8 +4,10 @@ import { IoLocationSharp } from 'react-icons/io5';
 
 const Footer = ({ color }) => {
   return (
-    <div className="w-[99dvw] h-full  bottom-1 left-0 ml-2 pt-2 flex flex-col gap-5 xl:flex-row-reverse xl:gap-y-8 text-xl xl:text-3xl justify-between items-center px-10">
-      <div style={{ color: `${color}` }}>
+    <div className="w-[99dvw] h-full  bottom-1 left-0 ml-2 pt-2 flex flex-col gap-5 xl:flex-row-reverse xl:gap-y-8 text-sm xl:text-2xl justify-between items-center px-10">
+      <div
+        style={{ color: `${color}` }}
+        className="text-right font-IranianSans">
         آدرس : پایین تر از سه راهی مطهری بالایی ، جنب کفش ملی
       </div>
       <div className="flex gap-4 justify-center md:justify-start">

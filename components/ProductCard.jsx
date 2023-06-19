@@ -1,10 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
 
+import { isInCart } from '@/src/features/helper';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem, removeItem } from '@/src/features/compareItemSlice';
+import { SelectedCompareItems } from '@/src/features/compareItemSlice';
+
 const ProductCard = ({ color, data, url }) => {
+  const dispatch = useDispatch();
+  const compareItems = useSelector(SelectedCompareItems);
+
   return (
     <div
-      className={`box-border w-[95%] md:w-[45%] lg:w-[23%] xl-w[23%] 2xl:w-[18%] h-[30dvh] BackMorphism py-5`}>
+      className={`box-border w-[95%] md:w-[45%] lg:w-[23%] xl-w[23%] 2xl:w-[18%] h-[30dvh] BackMorphism py-5 flex flex-col justify-evenly items-center`}>
       {url && (
         <Link
           href={url}
@@ -41,6 +50,19 @@ const ProductCard = ({ color, data, url }) => {
             </div>
           </div>
         </Link>
+      )}
+      {!isInCart(compareItems, data.id) ? (
+        <button
+          className={`text-${color}`}
+          onClick={() => dispatch(addItem(data))}>
+          Add To Compare List
+        </button>
+      ) : (
+        <button
+          className={`text-${color}`}
+          onClick={() => dispatch(removeItem(data))}>
+          Remove From Compare List
+        </button>
       )}
     </div>
   );

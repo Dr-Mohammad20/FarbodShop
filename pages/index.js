@@ -15,24 +15,24 @@ export default function Home() {
       <div className="h-[15%] w-full flex flex-row-reverse justify-center items-center gap-4 top-2 left-0 text-xl xl:text-3xl bg-black/[0.7]">
         <Link
           href="/Products"
-          className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans BorderDownGroundZero">
+          className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans BorderDownGroundZero text-sm xl:text-3xl">
           محصولات
         </Link>
         <Link
           href="/"
-          className="h-full w-1/2 flex justify-center items-center text-GroundZero font-IranianSans text-[80px]">
+          className="h-full w-1/2 flex justify-center items-center text-GroundZero font-IranianSans text-2xl xl:text-6xl">
           فروشگاه فربد
         </Link>
         <Link
           href="/AboutUs"
-          className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans BorderDownGroundZero">
+          className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans BorderDownGroundZero text-sm xl:text-3xl">
           درباره ما
         </Link>
       </div>
 
       {/* Main Section */}
-      <div className="w-full h-[75%] flex flex-wrap justify-center items-start text-xl xl:text-3xl sm:text-sm">
-        <div className="w-1/2 h-[25%] flex flex-col flex-wrap gap-12 justify-center items-center text-center text-GroundZero bg-black/[0.7] BorderDownGroundZero clipPath">
+      <div className="w-full h-[70%] md:h-[75%] flex flex-wrap justify-center items-start text-sm xl:text-3xl sm:text-sm">
+        <div className="w-1/2 h-[20%] md:h=[25%] flex flex-col flex-wrap gap-4 md:gap-12 justify-center items-center text-center text-GroundZero bg-black/[0.7] BorderDownGroundZero clipPath">
           <h3>نمایندگی رسمی محصولات</h3>
           <h1>گرند زیرو ، همرتک ، ساند دیجیتال ، پایونیر</h1>
         </div>
@@ -62,11 +62,11 @@ export default function Home() {
       </div>
 
       {/* Footer Section */}
-      <div className="BorderTopGroundZero w-full h-[10%] text-GroundZero text-xl flex flex-col xl:flex-row-reverse xl:gap-y-8 xl:text-2xl bg-black/[0.7] justify-between items-center px-10">
-        <div className="font-IranianSans">
+      <div className="BorderTopGroundZero w-full h-[15%] md:h-[10%] text-GroundZero flex flex-col xl:flex-row-reverse xl:gap-y-8 text-sm xl:text-2xl text-right bg-black/[0.7] justify-between items-center px-10">
+        <div className="font-IranianSans mt-2 md:mt-0">
           آدرس : پایین تر از سه راهی مطهری بالایی ، جنب کفش ملی
         </div>
-        <div className="flex gap-4 justify-center md:justify-start">
+        <div className="flex gap-4 justify-center md:justify-start mb-2 md:mb-0">
           <div
             onClick={() =>
               window.open(
@@ -99,6 +99,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Footer section end */}
     </div>
+    // Main Div End
   );
 }

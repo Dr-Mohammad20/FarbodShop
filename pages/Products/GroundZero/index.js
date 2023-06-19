@@ -90,24 +90,24 @@ function index({ productsData }) {
       <Head>
         <title>محصولات گرند زیرو در فروشگاه فربد</title>
       </Head>
-      // Main Div Start
+      {/* Main Div Start */}
       <div className="w-[100dvw] min-h-[100dvh] h-fit flex flex-col justify-center items-center px-2 bg-black">
         {/* Header Section start*/}
-        <div className="h-[13dvh] w-full flex flex-row-reverse justify-center items-center gap-4 text-xl xl:text-3xl bg-black/[0.7] BorderDownGroundZero">
+        <div className="h-[13dvh] w-full flex flex-row-reverse justify-center items-center gap-4 bg-black/[0.7] BorderDownGroundZero">
           <Link
             href="/Products"
-            className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans">
+            className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans text-sm xl:text-3xl">
             محصولات
           </Link>
           <Link
             href="/"
-            className="h-full w-1/2 flex justify-center items-center text-GroundZero font-IranianSans text-[60px]">
+            className="h-full w-1/2 flex justify-center items-center text-GroundZero font-IranianSans text-2xl xl:text-6xl">
             فروشگاه فربد
           </Link>
           <Link
-            href="/AboutUs"
-            className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans">
-            درباره ما
+            href="/CompareItem"
+            className="h-full w-1/4 flex justify-center items-center text-GroundZero font-IranianSans text-sm xl:text-3xl">
+            مقایسه محصولات
           </Link>
         </div>
         {/* Header Section end*/}
